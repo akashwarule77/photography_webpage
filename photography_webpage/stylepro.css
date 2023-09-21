@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.content{
+    color: whitesmoke;
+    height: 200px;
+    width:50%;
+    position: absolute;
+    top: 150px;
+    left: 400px;
+    font-size: 50px;
+    opacity: 0.5;
+    font-weight: bold;
+}
+.more a{
+    
+    color: black;
+    position: absolute;
+    top: 475px;
+    left: 40%;
+    border-radius: 5px;
+    box-shadow:0 0 6px rgba(255, 255, 255, 0.6);
+    background-color:  rgba(255, 255, 255, 0.1);    
+    font-size: 30px;
+
+    
+}
+
+ 
+.main_box{
+    background: url("dslr.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+.btn_one{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+}
+.sidebarr_menu{
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color:  rgba(255, 255, 255, 0.1);
+    /* opacity: 0.3; */
+    box-shadow:0 0 6px rgba(255, 255, 255, 0.5);
+    transition: all 0.4s linear;
+}
+.sidebarr_menu .loggo{
+    position: absolute;
+
+    width: 100%;
+    line-height: 60px;
+    box-shadow:0 0 4px rgba(255, 255, 255, 0.5);
+}
+.sidebarr_menu .loggo a{
+    
+    position: absolute;
+    left: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+ 
+}
+.sidebarr_menu .btn_two i{
+   color: gray;
+   font-size: 25px;
+   line-height: 60px;
+   position: absolute;
+   left: 275px;
+   cursor: pointer;
+   /* opacity: 0; */
+
+}
+.sidebarr_menu .menu{
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    color: white;
+}
+.sidebarr_menu .menu li{
+   margin-top: 7px;
+   padding: 14px 20px;
+}
+.sidebarr_menu .menu i,a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.sidebarr_menu .menu i{
+    padding-right: 8px;
+}
+.sidebarr_menu .social_media {
+    color: white;
+    opacity: 0.5;
+    position: absolute;
+    left: 35%;
+    bottom: 50px;
+}
+.sidebarr_menu .social_media i{
+    color: white;
+    opacity: 0.5;
+    padding: 3px;
+}
+#check{
+    display: none;
+}
+.sidebarr_menu .menu li:hover{
+    box-shadow:0 0 4px rgba(255, 255, 255, 0.5);
+}
+.btn_one i:hover{
+    font-size: 40px;
+    cursor: pointer;
+}
+.btn_two i:hover{
+    font-size: 30px;
+    
+}
+.sidebarr_menu .social_media i:hover{
+    opacity: 1;
+    transform: scale(1.1);
+
+}
+#check:checked ~ .sidebarr_menu{
+    left: 0;
+}
+#check:checked ~ .btn_one i{
+    opacity: 0;
+}
+#check:checked ~ .sidebarr_menu .btn_two i{
+    opacity: 1;
+}
+
+
+
+
+
+ 
